@@ -1,0 +1,30 @@
+{
+  "name": "bhuiyan_web",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vite preview",
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mdi/font": "5.9.55",
+    "axios": "^1.6.7",
+    "mitt": "^3.0.1",
+    "roboto-fontface": "*",
+    "swiper": "^11.0.5",
+    "vue": "^3.3.10",
+    "vue-router": "^4.2.5",
+    "vue-select": "^3.20.2",
+    "vuetify": "^3.0.0-beta.0",
+    "webfontloader": "^1.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.1",
+    "vite": "^5.0.5",
+    "vite-plugin-vuetify": "^1.0.0-alpha.12",
+    "vue-cli-plugin-vuetify": "~2.5.8"
+  },
+  "type": "module"
+}
