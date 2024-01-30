@@ -1,4 +1,4 @@
-const api_url = "http://54.82.47.83:5000/api";
+const api_url = "";
 const isDebug = import.meta.env.VITE_DEBUG === 'true';
 console.log("find data", import.meta.env.VITE_APP_URL,isDebug)
 
@@ -76,7 +76,7 @@ export default {
     getAllProperties() {
         return new Promise((resolve, reject) => {
             axios
-                .get(`${api_url}/customer/fetchAllProperties`)
+                .get(`/v1/customer/fetchAllProperties`)
                 .then((response) => {
                     resolve(response.data);
                 })

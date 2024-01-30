@@ -2,7 +2,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue';
 import EmiCalculator from '../views/EmiCalculator.vue';
 import BlogPost from '../views/BlogPost.vue'
-import ContactUs from '../views/ContactUs.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -20,11 +19,6 @@ const router = createRouter({
       path: '/blogPost',
       name: 'blogPost',
       component: BlogPost
-    },
-    {
-      path: '/contactUs',
-      name: 'contactUs',
-      component: ContactUs
     },
     {
       path: '/about',
