@@ -301,7 +301,7 @@ export default {
     ]);
     const getAllProperties = async () => {
   try {
-    const response = await axios.get('//api.apis.guru/v2/list.json');
+    const response = await axios.get('//54.82.47.83.nip.io:5000/api/customer/fetchAllProperties');
     console.log("Response:", response.data);
     property_items.value = response.data.result; // Assuming response.data.result contains the properties
   } catch (error) {
