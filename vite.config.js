@@ -13,7 +13,7 @@ export default defineConfig({
       '/v1': {
         target: 'http://54.82.47.83:5000',
         changeOrigin: true,
-        secure: false,
+        secure: true,
         rewrite: (path) => path.replace(/^\/v1/, ''),
       },
     },
