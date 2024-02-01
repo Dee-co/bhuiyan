@@ -76,7 +76,7 @@ export default {
     getAllProperties() {
         return new Promise((resolve, reject) => {
             axios
-                .get(`/v1`)
+                .get(`https://api.apis.guru/v2/list.json`)
                 .then((response) => {
                     resolve(response.data);
                 })
