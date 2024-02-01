@@ -76,7 +76,7 @@ export default {
     getAllProperties() {
         return new Promise((resolve, reject) => {
             axios
-                .get(`https://api.apis.guru/v2/list.json`)
+                .get(`http://54.82.47.83.nip.io:5000/api/customer/fetchAllProperties`)
                 .then((response) => {
                     resolve(response.data);
                 })
