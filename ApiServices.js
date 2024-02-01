@@ -76,7 +76,7 @@ export default {
     getAllProperties() {
         return new Promise((resolve, reject) => {
             axios
-                .get(`http://54.82.47.83:5000/api/customer/fetchAllProperties`)
+                .get(`/v1/customer/fetchAllProperties`)
                 .then((response) => {
                     resolve(response.data);
                 })
