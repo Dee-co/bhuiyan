@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue';
 import EmiCalculator from '../views/EmiCalculator.vue';
 import BlogPost from '../views/BlogPost.vue'
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes: [
     {
       path: '/',
