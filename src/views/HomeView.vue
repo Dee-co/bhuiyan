@@ -224,8 +224,8 @@
 </template>
 <script>
 import { onMounted, ref ,inject} from "vue";
-import ApiServices from "../../ApiServices";
 import PropertyComponent from "@/components/PropertyComponent.vue";
+import axios from 'axios';
 export default {
   components: {
     PropertyComponent,
@@ -300,14 +300,14 @@ export default {
       },
     ]);
     const getAllProperties = async () => {
-      try {
-        const get_response = await ApiServices.getAllProperties();
-        console.log("fjkdfjkdsjfksf", get_response);
-        property_items.value = get_response.result;
-      } catch (error) {
-        console.log(error);
-      }
-    };
+  try {
+    const response = await axios.get('http://54.82.47.83.nip.io:5000/api/customer/fetchAllProperties');
+    console.log("Response:", response.data);
+    property_items.value = response.data.result; // Assuming response.data.result contains the properties
+  } catch (error) {
+    console.error("Error:", error);
+  }
+};
     onMounted(() => {
       getAllProperties();
       eventBus.on('scroll_contactUs', () => {
