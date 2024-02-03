@@ -34,10 +34,8 @@
       >
         <div @click="setActive(index, item)" class="border rounded">
           <img
-            v-if="item.pi_name != null"
-            :src="`http://54.82.47.83:5000/api/property/accessPropertyImages/${getPiName(
-              item
-            )}`"
+            v-if="item.property_image != null"
+            :src="item.property_image"
             alt=""
             width="100%"
             height="200px"

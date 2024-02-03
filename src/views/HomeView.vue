@@ -301,9 +301,9 @@ export default {
     ]);
     const getAllProperties = async () => {
   try {
-    const response = await axios.get('//api.apis.guru/v2/list.json');
+    const response = await axios.get('http://127.0.0.1:8000/api/getProperies');
     console.log("Response:", response.data);
-    property_items.value = response.data.result; // Assuming response.data.result contains the properties
+    property_items.value = response.data; // Assuming response.data.result contains the properties
   } catch (error) {
     console.error("Error:", error);
   }
